@@ -1,0 +1,71 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font: 400 1rem "Montserrat", sans-serif;
+}
+h2{
+    letter-spacing: 0.05rem;
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+
+}
+.cabecalho-menu-item{
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+}
+.secao-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around
+}
+.secao-sobre-mim{
+    display:flex ;
+    flex-direction: row;
+    gap: 24px;
+    margin-top: 48px;
+    justify-content: start;
+}
+#secao-sobre-mim-imagem{
+    height: 372px;
+    width: 280px;
+    padding: 20px;
+}
+#secao-sobre-mim-titulo{
+    padding: 30px;
+    
+}
+#secao-sobre-mim-descricao{
+    max-width:700px ;
+    
+}
+.secao-portfolio-fotos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    gap: 30px;
+    margin-left: 30px;
+    
+    img {
+        width: 352px;
+        height: 260px;
+    }
+}
+#secao-portfolio-titulo{
+    padding: 30px;
+}
+footer p {
+    text-align: center;
+}
