@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -13,6 +14,7 @@ h2 {
   letter-spacing: 0.05rem;
 }
 
+/* CABEÇALHO */
 .cabecalho {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,6 +40,7 @@ h2 {
   text-decoration: none;
 }
 
+/*Seção principal*/
 .secao-principal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,6 +56,7 @@ h2 {
       justify-content: space-around;
 }
 
+/*Seção sobre-mim*/
 .secao-sobre-mim {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,12 +67,12 @@ h2 {
           flex-direction: row;
   gap: 24px;
   margin-top: 48px;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#secao-sobre-mim-imagem {
+.secao-sobre-mim-imagem {
   height: 372px;
   width: 280px;
   padding: 20px;
@@ -82,6 +86,7 @@ h2 {
   max-width: 700px;
 }
 
+/*Seção Portfolio*/
 .secao-portfolio-fotos {
   display: -ms-grid;
   display: grid;
@@ -99,6 +104,90 @@ h2 {
 }
 
 #secao-portfolio-titulo {
+  padding: 30px;
+}
+
+/*Seção Contatos*/
+#secao-contatos-titulo {
+  padding: 30px;
+}
+
+.secao-contatos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secao-contatos-detalhes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.secao-contatos-detalhes img {
+  width: 25px;
+  height: 25px;
+  margin: 25px;
+}
+
+.secao-contatos-detalhes div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.secao-contatos-form {
+  padding: 20px;
+  -webkit-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
+  width: 500px;
+  height: 500px;
+  margin: 20px;
+}
+
+.secao-contatos-form input {
+  border: 2px solid black;
+  padding-left: 2px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.secao-contatos-form h3 {
+  margin: 50px;
+}
+
+/*footer*/
+footer {
+  background-color: #000000;
+  color: white;
   padding: 30px;
 }
 
